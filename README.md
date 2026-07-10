@@ -171,17 +171,6 @@ Cria uma notificação, salva no banco e publica o job no RabbitMQ.
 - `400`: payload inválido
 - `500`: erro inesperado no servidor
 
-## Modelo de dados
-
-A tabela `notifications` armazena:
-
-- `id`
-- `recipient`
-- `type`
-- `status`
-- `payload`
-- `created_at`
-- `updated_at`
 
 ## Fluxo de retry e DLQ
 
