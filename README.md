@@ -193,4 +193,4 @@ Esse comportamento evita que a fila principal fique travada por mensagens proble
 
 ## Licença
 
-Projeto pessoal para estudo e portfólio.
+MIT License[](LICENSE)
