@@ -22,7 +22,6 @@ export async function bootstrapNotificationConsumer(): Promise<void> {
       const jobLogger = logger.child({ notificationId: job.notificationId, attempt });
 
       jobLogger.info({ queue: config.RABBITMQ_MAIN_QUEUE }, 'notification message received');
-      jobLogger.info('processing notification');
       await deliverNotification(job);
       jobLogger.info('notification sent');
       channel.ack(message);
